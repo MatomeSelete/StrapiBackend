@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ufcs",
+  "info": {
+    "singularName": "ufc",
+    "pluralName": "ufcs",
+    "displayName": "UFC",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Description": {
+      "type": "richtext"
+    }
+  }
+}

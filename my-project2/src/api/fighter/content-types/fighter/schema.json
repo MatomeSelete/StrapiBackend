@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fighters",
+  "info": {
+    "singularName": "fighter",
+    "pluralName": "fighters",
+    "displayName": "Fighter",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Fighter_Bio": {
+      "type": "richtext"
+    },
+    "Win": {
+      "type": "integer"
+    },
+    "Draw": {
+      "type": "integer"
+    },
+    "Lose": {
+      "type": "integer"
+    },
+    "ranking": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::ranking.ranking",
+      "inversedBy": "fighter"
+    }
+  }
+}

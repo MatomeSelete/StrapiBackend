@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "events",
+  "info": {
+    "singularName": "event",
+    "pluralName": "events",
+    "displayName": "Event",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Location": {
+      "type": "string"
+    },
+    "Date": {
+      "type": "datetime"
+    },
+    "matches": {
+      "type": "enumeration",
+      "enum": [
+        "First_Event",
+        "middle_Event",
+        "mainEvent"
+      ]
+    },
+    "events": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::event.event",
+      "mappedBy": "even"
+    },
+    "even": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::event.event",
+      "inversedBy": "events"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rankings",
+  "info": {
+    "singularName": "ranking",
+    "pluralName": "rankings",
+    "displayName": "Ranking",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "position": {
+      "type": "integer"
+    },
+    "picture": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "fighter": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::fighter.fighter",
+      "mappedBy": "ranking"
+    }
+  }
+}

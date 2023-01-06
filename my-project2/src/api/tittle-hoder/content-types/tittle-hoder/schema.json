@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tittle_hoders",
+  "info": {
+    "singularName": "tittle-hoder",
+    "pluralName": "tittle-hoders",
+    "displayName": "Tittle_hoder"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Title_no": {
+      "type": "integer"
+    }
+  }
+}
